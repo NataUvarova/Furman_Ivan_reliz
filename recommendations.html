@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Експлуатаційні рекомендації — TAD Concept</title>
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .guide-box {
+            background: var(--bg-light);
+            border-left: 5px solid var(--brand-red);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .guide-box h3 {
+            font-size: 19px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--brand-dark);
+        }
+        .step-list {
+            padding-left: 20px;
+            margin-top: 15px;
+        }
+        .step-list li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header class="tad-header">
+        <div class="wrapper header-container">
+            <div class="brand-logo">TAD</div>
+            <nav>
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="products.html">Продукція</a></li>
+                    <li><a href="video.html">Відео</a></li>
+                    <li><a href="recommendations.html" style="color: var(--brand-red);">Рекомендації</a></li>
+                    <li><a href="careers.html">Робота</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrapper" style="margin-top: 40px;">
+        <h1 style="font-weight: 900; text-align: center; margin-bottom: 10px;">Інженерні пам'ятки та регламенти</h1>
+        <p style="text-align: center; color: var(--text-gray); max-width: 650px; margin: 0 auto 40px auto;">Професійні поради конструкторського відділу TAD щодо правильного розподілу ваги та збільшення життєвого циклу техніки.</p>
+
+        <!-- Рекомендація 1 -->
+        <div class="guide-box">
+            <h3>1. Контроль та оптимізація навантаження на осі</h3>
+            <p>При перевезенні компактних надважких об'єктів (наприклад, промислових трансформаторів) критично важливо уникати концентрації маси по центру платформи. Неправильний розподіл створює точкове перенапруження металу.</p>
+            <ul class="step-list">
+                <li>Завжди зміщуйте центр ваги ближче до передньої стінки напівпричепа для кращого зчеплення тягача.</li>
+                <li>Використовуйте додаткові розширювачі платформи лише за наявності сертифікованих дерев'яних настилів.</li>
+            </ul>
+        </div>
+
+        <!-- Рекомендація 2 -->
+        <div class="guide-box">
+            <h3>2. Технічний регламент гідравлічних систем</h3>
+            <p>Гідросистема керованих осей вимагає специфічного догляду, особливо під час сезонних температурних коливань.</p>
+            <ul class="step-list">
+                <li>Перевіряйте щільність з'єднань високого тиску кожні 5 000 км пробігу.</li>
+                <li>У зимовий період використовуйте виключно низьков'язкі мастила класу ISO VG 32 для запобігання заклинюванню клапанів.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="site-footer" style="margin-top: 80px;">
+        <div class="footer-copyright"><div class="wrapper"><p>&copy; 2026 ТАД. Інформаційно-навчальний блок розробника сайту.</p></div></div>
+    </footer>
+</body>
+</html>

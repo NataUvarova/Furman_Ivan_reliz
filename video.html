@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медіа-архів та Тест-драйви — TAD Concept</title>
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .video-container-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+        @media (max-width: 500px) {
+            .video-container-grid { grid-template-columns: 1fr; }
+        }
+        .video-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid #eee;
+        }
+        .video-embed-placeholder {
+            position: relative;
+            width: 100%;
+            height: 260px;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        .play-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--brand-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+        .play-icon:hover { transform: scale(1.1); }
+        .video-meta {
+            padding: 20px;
+        }
+        .video-meta h3 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        .video-meta p {
+            font-size: 14px;
+            color: var(--text-gray);
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header class="tad-header">
+        <div class="wrapper header-container">
+            <div class="brand-logo">TAD</div>
+            <nav>
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="products.html">Продукція</a></li>
+                    <li><a href="video.html" style="color: var(--brand-red);">Відео</a></li>
+                    <li><a href="recommendations.html">Рекомендації</a></li>
+                    <li><a href="careers.html">Робота</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrapper" style="margin-top: 40px;">
+        <h1 style="font-weight: 900; text-align: center; margin-bottom: 10px;">Техніка в дії</h1>
+        <p style="text-align: center; color: var(--text-gray); max-width: 600px; margin: 0 auto 40px auto;">Візуальні звіти з випробувальних полігонів, розбори інженерних вузлів та реальні кейси перевезень.</p>
+
+        <div class="video-container-grid">
+            
+            <!-- Відео 1 -->
+            <div class="video-container-grid">
+    
+    <div class="video-card">
+        <div class="video-wrapper">
+            <iframe width="696" height="391" src="https://www.youtube.com/embed/xHDIQEQrE9I" title="Презентація низькорамного напівпричепа сімейства TAD.Classic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+            <h3>Презентація низькорамного напівпричепа сімейства TAD</h3>
+            <p>Виробництво низькорамних напівпричепів (тралів) для перевезення негабаритних вантажів</p>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <div class="video-wrapper">
+            <iframe width="742" height="391" src="https://www.youtube.com/embed/HfUTqfCnrdQ" title="TAD ModulMover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+            <h3>TAD ModulMover</h3>
+            <p>Коли мова йде про вантаж у сотні тонн, звичайних причепів недостатньо. Тут починається територія TAD ModulMover — високотехнологічних інженерних рішень, що перетворюють надважку логістику на контрольований та безпечний процес.</p>
+        </div>
+    </div>
+
+</div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-copyright"><div class="wrapper"><p>&copy; 2026 ТАД. Навчальний медіа-концепт для захисту курсової роботи.</p></div></div>
+    </footer>
+</body>
+</html>

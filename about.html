@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Філософія бренду — TAD Concept</title>
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, rgba(26,26,26,0.85) 0%, rgba(0,0,0,0.7) 100%), 
+                        url('https://picsum.photos/1200/400?grayscale') no-repeat center center/cover;
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .feature-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid var(--brand-red);
+            text-align: center;
+        }
+        .feature-card h4 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header class="tad-header">
+        <div class="wrapper header-container">
+            <div class="brand-logo">TAD</div>
+            <nav>
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html" style="color: var(--brand-red);">Про нас</a></li>
+                    <li><a href="products.html">Продукція</a></li>
+                    <li><a href="video.html">Відео</a></li>
+                    <li><a href="recommendations.html">Рекомендації</a></li>
+                    <li><a href="careers.html">Робота</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Банер -->
+    <section class="about-hero">
+        <div class="wrapper">
+            <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 0;">Створюємо рух для важкої індустрії</h1>
+        </div>
+    </section>
+
+    <main class="wrapper">
+        <!-- Альтернативний текст про компанію -->
+        <article class="info-block" style="margin-top: 50px; margin-bottom: 50px;">
+            <h2>Новий погляд на українське машинобудування</h2>
+            <p style="margin-bottom: 15px;">Бренд TAD сьогодні — це синонім інженерної сміливості. Ми не просто зварюємо метал, ми розробляємо високоефективні транспортні рішення, які допомагають бізнесу перевозити надважкі об'єкти з мінімальними витратами ресурсів. Кожен наш креслення — це результат тривалих математичних розрахунків.</p>
+            <p>Головний пріоритет нашої оновленої філософії — це інтеграція європейських стандартів безпеки в українські реалії логістики. Ми трансформуємо класичні уявлення про причепи, роблячи їх легшими, міцнішими та адаптивнішими до складного рельєфу та доріг.</p>
+        </article>
+
+        <!-- Нова сітка переваг -->
+        <section style="margin-bottom: 60px;">
+            <h2 style="text-align: center; font-weight: 800; margin-bottom: 30px;">Наші вектори розвитку</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>Цифрове моделювання</h4>
+                    <p style="font-size: 14px; color: var(--text-gray);">Перед запуском у виробництво кожна деталь проходить стрес-тести у віртуальних симуляторах екстремальних навантажень.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Полегшені сплави</h4>
+                    <p style="font-size: 14px; color: var(--text-gray);">Оптимізація власної ваги напівпричепа дозволяє перевозити більше корисного вантажу в рамках законодавчих лімітів.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Екологічне фарбування</h4>
+                    <p style="font-size: 14px; color: var(--text-gray);">Захист конструкцій здійснюється за допомогою сучасних грунтів, які не завдають шкоди довкіллю під час нанесення.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Перероблений Футер -->
+    <footer class="site-footer">
+        <div class="wrapper footer-layout">
+            <div class="footer-column">
+                <div class="brand-logo" style="margin-bottom: 15px;">TAD</div>
+                <p style="font-size: 14px; color: var(--text-gray);">Розробка та модернізація спеціалізованого причіпного транспорту нового покоління.</p>
+            </div>
+            <div class="footer-column">
+                <div class="footer-caption">Локація заводу</div>
+                <ul class="footer-list">
+                    <li>Україна, Хмельницька обл.,<br>м. Волочиськ, вул. Запорізька 7</li>
+                    <li><a href="tel:+380384542138">Тел: +38 (03845) 4 21 38</a></li>
+                    <li><a href="mailto:zavod@tad.ua">E-mail: zavod@tad.ua</a></li>
+                </ul>
+                <a href="#" class="map-trigger">Маршрут на карті</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-caption">Інфо-лінія</div>
+                <ul class="footer-list">
+                    <li><strong>Замовлення техніки:</strong><br><a href="tel:+380672332023">+38 (067) 233 20 23</a></li>
+                    <li><strong>Технічний сервіс:</strong><br><a href="tel:+380671642138">+38 (067) 164 21 38</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div class="footer-caption">Розділи концепту</div>
+                <ul class="footer-list">
+                    <li><a href="#">Нові розробки</a></li>
+                    <li><a href="#">Стандарти якості</a></li>
+                    <li><a href="careers.html">Вакансії заводу</a></li>
+                    <li><a href="#">Екологічна політика</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="wrapper">
+                <p>&copy; 2026 ТАД. Унікальний авторський веб-концепт для навчального проєкту. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кар'єра в TAD Concept — Будуй майбутнє</title>
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .career-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin: 50px 0;
+        }
+        @media (max-width: 768px) {
+            .career-section { grid-template-columns: 1fr; }
+        }
+        .job-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #eef0f2;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+        }
+        .job-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--brand-dark);
+            margin-bottom: 8px;
+        }
+        .job-tag {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header class="tad-header">
+        <div class="wrapper header-container">
+            <div class="brand-logo">TAD</div>
+            <nav>
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="products.html">Продукція</a></li>
+                    <li><a href="video.html">Відео</a></li>
+                    <li><a href="recommendations.html">Рекомендації</a></li>
+                    <li><a href="careers.html" style="color: var(--brand-red);">Робота</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <div class="career-section">
+            
+            <!-- Ліва колонка: Чому ми -->
+            <div>
+                <h1 style="font-weight: 900; margin-bottom: 20px; font-size: 2.2rem;">Приєднуйся до інженерної еліти</h1>
+                <p style="line-height: 1.6; margin-bottom: 20px;">Робота в TAD — це шанс стати частиною команди, яка створює унікальний продукт європейського рівня безпосередньо в Україні. Ми інвестуємо в автоматизацію робочих місць, сучасне зварювальне обладнання Fronius та ліцензійне програмне забезпечення SolidWorks для проєктувальників.</p>
+                <p style="line-height: 1.6; color: var(--text-gray);">Ми пропонуємо офіційне працевлаштування, регулярні програми підвищення кваліфікації на заводах-партнерах у ЄС та конкурентну заробітну плату з бонусною системою за раціоналізаторські пропозиції.</p>
+            </div>
+
+            <!-- Права колонка: Відкриті позиції -->
+            <div>
+                <h2 style="font-weight: 800; margin-bottom: 25px;">Актуальні вакансії заводу</h2>
+                
+                <!-- Вакансія 1 -->
+                <div class="job-card">
+                    <span class="job-tag" style="background: rgba(223, 6, 19, 0.1); color: var(--brand-red);">Конструкторське Бюро</span>
+                    <h3>Інженер-конструктор (CAD/SolidWorks)</h3>
+                    <p style="font-size: 14px; color: var(--text-gray);">Обов'язки: розробка кінематичних схем підвіски, розрахунок міцності рамних конструкцій у спеціалізованому софті.</p>
+                </div>
+
+                <!-- Вакансія 2 -->
+                <div class="job-card">
+                    <span class="job-tag">Виробничий цех</span>
+                    <h3>Електрозварник напівавтоматичних систем</h3>
+                    <p style="font-size: 14px; color: var(--text-gray);">Обов'язки: формування високоточних швів на конструкціях із високоміцних сталей Hardox та Domex.</p>
+                </div>
+
+                <p style="text-align: center; font-size: 14px; color: var(--text-gray); margin-top: 25px;">
+                    Надсилайте ваші резюме на пошту: <a href="mailto:hr@tad.ua" style="font-weight: 700; color: var(--brand-red);">hr@tad.ua</a>
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-copyright"><div class="wrapper"><p>&copy; 2026 ТАД. Сторінка кар'єрного концепту для курсового захисту.</p></div></div>
+    </footer>
+</body>
+</html>

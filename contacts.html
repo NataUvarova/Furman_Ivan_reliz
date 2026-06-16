@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — TAD Concept</title>
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .contacts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 50px;
+            margin: 50px 0;
+        }
+        .contact-form {
+            background: var(--bg-light);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 15px;
+            transition: var(--transition-smooth);
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--brand-red);
+            box-shadow: 0 0 0 3px rgba(223, 6, 19, 0.15);
+        }
+        .dept-contact {
+            margin-bottom: 25px;
+        }
+        .dept-contact h3 {
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--brand-dark);
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header class="tad-header">
+        <div class="wrapper header-container">
+            <div class="brand-logo">TAD</div>
+            <nav>
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="products.html">Продукція</a></li>
+                    <li><a href="video.html">Відео</a></li>
+                    <li><a href="recommendations.html">Рекомендації</a></li>
+                    <li><a href="careers.html">Робота</a></li>
+                    <li><a href="contacts.html" style="color: var(--brand-red);">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <div class="contacts-container">
+            
+            <!-- Інформаційне крило -->
+            <div>
+                <h1 style="font-weight: 900; margin-bottom: 30px;">Зворотний зв'язок</h1>
+                
+                <div class="dept-contact">
+                    <h3>Розташування потужностей</h3>
+                    <p style="color: var(--text-gray);">Україна, Хмельницька область, м. Волочиськ, вул. Запорізька, 7 (Індекс 31200)</p>
+                </div>
+
+                <div class="dept-contact">
+                    <h3>Консультації щодо замовлень</h3>
+                    <p><a href="tel:+380672332023" style="font-weight: 700;">+38 (067) 233 20 23</a></p>
+                    <p style="color: var(--text-gray); font-size: 14px;">Електронна скринька: commercial@tad.ua</p>
+                </div>
+
+                <div class="dept-contact">
+                    <h3>Інженерна підтримка клієнтів</h3>
+                    <p><a href="tel:+380671642138" style="font-weight: 700;">+38 (067) 164 21 38</a></p>
+                    <p style="color: var(--text-gray); font-size: 14px;">Електронна скринька: tech-support@tad.ua</p>
+                </div>
+
+                <div class="dept-contact">
+                    <h3>Канцелярія заводу</h3>
+                    <p>Телефон/факс адміністрації: +38 (03845) 4 21 38</p>
+                    <p style="color: var(--text-gray); font-size: 14px;">zavod@tad.ua</p>
+                </div>
+            </div>
+
+            <!-- Форма зв'язку -->
+            <div>
+                <form class="contact-form" action="#" method="POST">
+                    <h2 style="font-weight: 800; margin-bottom: 25px; font-size: 22px;">Залишити запит інженеру</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я / Компанія</label>
+                        <input type="text" id="name" required placeholder="Наприклад, ТОВ Логістик">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Контактний номер</label>
+                        <input type="tel" id="phone" required placeholder="+380">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Параметри необхідної техніки</label>
+                        <textarea id="message" rows="4" required placeholder="Опишіть завдання, вагу вантажу або умови експлуатації..."></textarea>
+                    </div>
+
+                    <button type="submit" class="action-button" style="border: none; width: 100%; cursor: pointer;">Надіслати на розгляд</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Компактний футер -->
+    <footer class="site-footer">
+        <div class="footer-copyright">
+            <div class="wrapper">
+                <p>&copy; 2026 ТАД. Навчальний концепт-проєкт захищено від копіювання коду.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

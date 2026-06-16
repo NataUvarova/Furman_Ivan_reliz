@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модельний ряд — TAD Concept</title>
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .product-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            transition: var(--transition-smooth);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+        .product-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 25px;
+        }
+        .product-info h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        .specs-table {
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 14px;
+            border-collapse: collapse;
+        }
+        .specs-table td {
+            padding: 6px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+        .specs-table td:last-child {
+            text-align: right;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header class="tad-header">
+        <div class="wrapper header-container">
+            <div class="brand-logo">TAD</div>
+            <nav>
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="products.html" style="color: var(--brand-red);">Продукція</a></li>
+                    <li><a href="video.html">Відео</a></li>
+                    <li><a href="recommendations.html">Рекомендації</a></li>
+                    <li><a href="careers.html">Робота</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrapper" style="margin-top: 40px;">
+        <h1 style="font-weight: 900; text-align: center; margin-bottom: 10px;">Прогресивний модельний ряд</h1>
+        <p style="text-align: center; color: var(--text-gray); max-width: 600px; margin: 0 auto 40px auto;">Інноваційні інженерні платформи TAD, спроєктовані для оптимізації сучасних вантажоперевезень.</p>
+
+        <div class="catalog-grid">
+            
+            <!-- Модель 1 -->
+            <div class="product-card">
+                <img src="assets/завантаження (1).jpg" alt="TAD Titan" class="product-img">
+                <div class="product-info">
+                    <h3>TAD Titan (Низькорамна серія)</h3>
+                    <table class="specs-table">
+                        <tr><td>Розрахункова вантажність</td><td>до 55 тонн</td></tr>
+                        <tr><td>Кількість осей</td><td>4 гідравлічні осі</td></tr>
+                        <tr><td>Специфікація рами</td><td>Телескопічне видовження</td></tr>
+                    </table>
+                    <a href="#" class="action-button" style="padding: 10px 24px; font-size: 11px; width: 100%; text-align: center;">Специфікація</a>
+                </div>
+            </div>
+
+            <!-- Модель 2 -->
+            <div class="product-card">
+                <img src="assets/завантаження.jpg" alt="TAD Aero" class="product-img">
+                <div class="product-info">
+                    <h3>TAD Aero (Полегшена платформа)</h3>
+                    <table class="specs-table">
+                        <tr><td>Максимальна маса</td><td>до 35 тонн</td></tr>
+                        <tr><td>Аеродинамічні властивості</td><td>Енергозберігаючі борти</td></tr>
+                        <tr><td>Електроніка</td><td>Інтелектуальний блок EBS</td></tr>
+                    </table>
+                    <a href="#" class="action-button" style="padding: 10px 24px; font-size: 11px; width: 100%; text-align: center;">Специфікація</a>
+                </div>
+            </div>
+
+            <!-- Модель 3 -->
+            <div class="product-card">
+                <img src="assets/завантаження (2).jpg" alt="TAD Eco" class="product-img">
+                <div class="product-info">
+                    <h3>TAD Eco-Agro (Агро-сегмент)</h3>
+                    <table class="specs-table">
+                        <tr><td>Об'єм самоскидного кузова</td><td>58 куб.м</td></tr>
+                        <tr><td>Матеріал шасі</td><td>Полегшений сталевий сплав</td></tr>
+                        <tr><td>Швидкість вивантаження</td><td>До 120 секунд</td></tr>
+                    </table>
+                    <a href="#" class="action-button" style="padding: 10px 24px; font-size: 11px; width: 100%; text-align: center;">Специфікація</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer" style="margin-top: 60px;">
+        <div class="wrapper footer-layout">
+            <div class="footer-column"><div class="brand-logo" style="margin-bottom: 15px;">TAD</div><p style="font-size: 14px; color: var(--text-gray);">Виробництво надійної причіпної техніки.</p></div>
+            <div class="footer-column"><div class="footer-caption">Головний офіс</div><ul class="footer-list"><li>м. Волочиськ, вул. Запорізька 7</li><li><a href="tel:+380384542138">+38 (03845) 4 21 38</a></li></ul></div>
+            <div class="footer-column"><div class="footer-caption">Зв'язок</div><ul class="footer-list"><li><a href="tel:+380672332023">+38 (067) 233 20 23</a></li></ul></div>
+            <div class="footer-column"><div class="footer-caption">Навігація</div><ul class="footer-list"><li><a href="#">Каталог концептів</a></li></ul></div>
+        </div>
+        <div class="footer-copyright"><div class="wrapper"><p>&copy; 2026 ТАД. Навчальний проєкт переосмислення дизайну.</p></div></div>
+    </footer>
+</body>
+</html>

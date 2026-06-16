@@ -1,0 +1,522 @@
+/* CSS Змінні для унікальності та легкого налаштування */
+:root {
+    --brand-red: #e30613;
+    --brand-dark: #1a1a1a;
+    --text-gray: #4a4a4a;
+    --bg-light: #f9f9f9;
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    color: var(--brand-dark);
+    line-height: 1.65;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Унікальний Хедер */
+.tad-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.brand-logo {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--brand-red);
+    letter-spacing: -1.5px;
+}
+
+.navigation-menu {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.navigation-menu a {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #555;
+}
+
+.navigation-menu a:hover {
+    color: var(--brand-red);
+}
+
+/* Головний промо-блок */
+.main-hero {
+    position: relative;
+    background: linear-gradient(135deg, rgba(26,26,26,0.8) 0%, rgba(0,0,0,0.6) 100%), 
+                url('assets/image\ 5.png') no-repeat center center/cover;
+    padding: 140px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    letter-spacing: -0.5px;
+}
+
+/* Кастомна кнопка */
+.action-button {
+    display: inline-block;
+    background-color: var(--brand-red);
+    color: #fff;
+    padding: 14px 36px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px; /* Округлена форма замість квадратної */
+    box-shadow: 0 4px 15px rgba(227, 6, 19, 0.3);
+}
+
+.action-button:hover {
+    background-color: #b8050f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(227, 6, 19, 0.4);
+}
+
+/* Розумна адаптивна сітка послуг */
+.showcase-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin: 50px 0;
+}
+
+.showcase-item {
+    position: relative;
+    height: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: var(--transition-smooth);
+}
+
+.showcase-item:hover img {
+    transform: scale(1.05);
+    opacity: 0.5;
+}
+
+.showcase-item h3 {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Про компанію */
+.info-block {
+    margin: 70px 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-block h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.info-block p {
+    color: var(--text-gray);
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Траст-зона (Логотипи) */
+.trust-zone {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.trust-zone h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    color: #777;
+}
+
+.logo-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.logo-flex img {
+    max-height: 45px;
+    filter: grayscale(100%) cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0.6;
+}
+
+/* Перероблений авторський Футер */
+.site-footer {
+    background-color: var(--bg-light);
+    padding: 70px 0 30px 0;
+    border-top: 2px solid #eee;
+}
+
+.footer-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-caption {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+    color: var(--brand-dark);
+    border-left: 3px solid var(--brand-red);
+    padding-left: 10px;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list li {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.footer-list a:hover {
+    color: var(--brand-red);
+    padding-left: 4px;
+}
+
+/* Кнопка маршруту всередині контактів */
+.map-trigger {
+    display: inline-block;
+    background: transparent;
+    color: var(--brand-red);
+    border: 2px solid var(--brand-red);
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.map-trigger:hover {
+    background: var(--brand-red);
+    color: #fff;
+}
+
+.footer-copyright {
+    padding-top: 25px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+}
+
+/* Адаптивність через один класичний брейкпоінт */
+@media (max-width: 768px) {
+    .navigation-menu {
+        display: none; /* Захист від налізання лінків на моб */
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .site-footer {
+        text-align: center;
+    }
+    .footer-caption {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Магічна пропорція для YouTube */
+    height: 0;
+    overflow: hidden;
+    background-color: #000; /* Чорний фон, поки відео вантажиться */
+}
+
+/* Сам плеєр YouTube розширюється рівно під розміри своєї обгортки */
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Налаштування карток, щоб вони стояли рівно */
+.video-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #eef0f2;
+}
+/* ==========================================================================
+   Стилі для сторінки модельного ряду (Каталог)
+   ========================================================================== */
+
+.active-nav-link {
+    color: var(--brand-red) !important;
+    border-bottom: 2px solid var(--brand-red);
+    padding-bottom: 4px;
+}
+
+/* Промо-шапка внутрішньої сторінки */
+.page-hero {
+    background: linear-gradient(rgba(26,26,26,0.85), rgba(26,26,26,0.85)), url('https://picsum.photos/1920/400?blur=5') no-repeat center center/cover;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main-content {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+/* Фільтри */
+.catalog-filter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--brand-red);
+    color: #fff;
+    border-color: var(--brand-red);
+    box-shadow: 0 4px 12px rgba(227, 6, 19, 0.2);
+}
+
+/* Сітка карток */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Картка товару */
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border: 1px solid #eee;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-smooth);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* Бейджики (Новинка / Топ) */
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--brand-red);
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    z-index: 5;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.product-badge.budget {
+    background-color: #38a169; /* Зелений для Новинки */
+}
+
+/* Зображення товару */
+.product-image {
+    height: 200px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.04);
+}
+
+/* Інформація всередині картки */
+.product-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--brand-dark);
+}
+
+.product-desc {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Специфікації */
+.specs-list {
+    list-style: none;
+    margin-bottom: auto; /* Штовхає кнопку вниз, щоб картки були однієї висоти */
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+}
+
+.specs-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.specs-list span {
+    color: #888;
+}
+
+/* Кнопка в картці */
+.product-footer {
+    padding-top: 20px;
+}
+
+.detail-button {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    color: var(--brand-dark);
+    border: 2px solid var(--brand-dark);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: var(--transition-smooth);
+}
+
+.detail-button:hover {
+    background-color: var(--brand-red);
+    border-color: var(--brand-red);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(227, 6, 19, 0.2);
+}
+
+/* Адаптація під мобільні пристрої */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    .catalog-filter {
+        gap: 8px;
+    }
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
